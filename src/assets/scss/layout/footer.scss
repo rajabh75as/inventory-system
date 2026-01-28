@@ -1,0 +1,31 @@
+.footer {
+  position: fixed;
+  background-color: #fff;
+  //width: 82.5%;
+  width: 100%;
+  bottom: 0;
+  //margin-right: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding: 0 35px;
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+    color: #a3a3a3;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+}
+
+
+@media (max-width: 414px) {
+  .footer p {
+    font-size: 10px;
+  }
+}

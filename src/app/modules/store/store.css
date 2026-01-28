@@ -1,0 +1,8 @@
+.cover{
+  position: absolute;
+  right: 20px;
+  z-index: 3000;
+  width: 200px;
+  height: 170px;
+  background-color: #83bc01;
+}

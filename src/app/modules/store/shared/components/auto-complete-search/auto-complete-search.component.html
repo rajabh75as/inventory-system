@@ -1,0 +1,33 @@
+<div class="form-group row mt-2 ">
+  <div class=" {{labelCol}} d-flex pl-0 pr-0">
+    <span class="empty-span" [ngClass]="{'field-require':required}"></span>
+    <label class="form-label">{{ label}}</label>
+  </div>
+  <div class=" {{inputCol}} pr-0 pl-0">
+    <ng-autocomplete class="form-control autocomplete_input"
+                     [data]="items"
+                     [disabled]="disabled"
+                     [attr.required]="required"
+                     [(ngModel)]="inputValue"
+                     [searchKeyword]="bindTitle"
+                     (selected)="selectOnOptionAutoComplete($event)"
+                     (inputChanged)="onChangeSearchAutoComplete($event)"
+                     (inputCleared)="onClearInputAutoComplete()"
+                     [itemTemplate]="itemTemplate"
+                     [notFoundTemplate]="notFoundTemplate"
+                     [debounceTime]="400">
+    </ng-autocomplete>
+    <ng-template #itemTemplate let-item>
+      <div class="d-flex align-items-center">
+        <i class="fa fa-search icon"></i>
+        <div class="d-flex flex-column">
+          <span [innerHTML]="item[bindTitle]" class="search-item-title"></span>
+          <a [innerHTML]="'در دسته '+ item[bindSubTitle]" *ngIf="item[bindSubTitle]"></a>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #notFoundTemplate let-notFound>
+      <div [innerHTML]="'مقدار وارد شده معتبر نیست'"></div>
+    </ng-template>
+  </div>
+</div>

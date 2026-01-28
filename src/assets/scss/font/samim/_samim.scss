@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Samim;
+  src: url('/assets/scss/font/samim/Samim-FD.eot');
+  src: url('/assets/scss/font/samim/Samim-FD.eot?#iefix') format('embedded-opentype'),
+  url('/assets/scss/font/samim/Samim-FD.woff') format('woff'),
+  url('/assets/scss/font/samim/Samim-FD.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Samim;
+  src: url('/assets/scss/font/samim/Samim-Bold-FD.eot');
+  src: url('/assets/scss/font/samim/Samim-Bold-FD.eot?#iefix') format('embedded-opentype'),
+  url('/assets/scss/font/samim/Samim-Bold-FD.woff') format('woff'),
+  url('/assets/scss/font/samim/Samim-Bold-FD.ttf') format('truetype');
+  font-weight: bold;
+}

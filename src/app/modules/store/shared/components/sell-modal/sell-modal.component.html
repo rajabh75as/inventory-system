@@ -1,0 +1,60 @@
+<div class="modal-header">
+  <h4 class="modal-title">ثبت فروش</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="activeModal.dismiss()"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <div class="mb-3">
+    <strong>نام کالا:</strong> {{ data.itemName }}
+  </div>
+
+  <div class="mb-3">
+    <strong>قیمت خرید هر واحد:</strong>
+    {{ data.buyPricePerUnit | number }}
+  </div>
+
+  <form [formGroup]="formGroup">
+    <div class="row">
+      <div class="col-md-6">
+        <app-mehr-input
+          [label]="data.itemType === 'hose' ? 'متراژ فروش' : 'تعداد فروش'"
+          formControlName="quantity"
+          numbersOnly
+          [required]="true"
+        >
+        </app-mehr-input>
+      </div>
+
+      <div class="col-md-6">
+        <app-mehr-input
+          label="قیمت فروش هر واحد"
+          formControlName="sellPricePerUnit"
+          numbersOnly
+          [required]="true"
+        >
+        </app-mehr-input>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer">
+  <app-mehr-button (onClick)="activeModal.dismiss()">
+    انصراف
+  </app-mehr-button>
+
+  <app-mehr-button
+    bgColor="success"
+    [disabled]="formGroup.invalid"
+    (onClick)="onSave()"
+  >
+    ثبت فروش
+  </app-mehr-button>
+</div>

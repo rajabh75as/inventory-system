@@ -1,0 +1,23 @@
+<app-header
+  [visibleFullScreen]="true"
+  [visibleNotification]="true"
+  [visibleProfile]="true"
+  [visibleHome]="true"
+  [homeLink]="'../content'">
+</app-header>
+<div class="cover"></div>
+<main #main id="wrraper" *ngIf="menuIsReady">
+  <app-side-navigation
+    [version]="versionFront"
+    [sideBarMenu]="menu"
+    [versionBack]="versionBack">
+  </app-side-navigation>
+
+  <section id="main_wrraper_content" class="float-left">
+    <div id="content_main_page">
+      <div id="page_content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </section>
+</main>

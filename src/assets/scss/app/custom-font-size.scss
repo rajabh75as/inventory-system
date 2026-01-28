@@ -1,0 +1,39 @@
+.label-check {
+    font-size:13px;
+}
+
+input.form-control {
+    font-size: .8rem;
+  }
+
+  .custom-labels {
+    font-size: .8rem;
+
+    @media (min-width: 1000px) and (max-width: 1200px) {
+      font-size: 13px;
+    }
+
+  }
+  
+.sub_menu {
+    .content {
+      .title {
+        font-size: 11px;
+      }
+  
+  
+    }
+  
+  }
+  .cdk-overlay-pane {
+    .icon {
+   
+      span {
+        font-size: 1.1rem;
+    }
+    }
+  
+    .title {
+        font-size: .9rem;
+    }
+  }

@@ -1,0 +1,78 @@
+<app-mehr-filter-grid [collapseSearchPanel]="isOpen">
+  <form class="row">
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.code.label ?? ''"
+        [(ngModel)]="model.code.filterValue"
+        name="code"
+        maxlength="50"
+        [placeholder]="'کد شلنگ را وارد کنید'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.sizeInch.label ?? ''"
+        [(ngModel)]="model.sizeInch.filterValue"
+        [items]="sizeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="sizeInch">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.standard.label ?? ''"
+        [(ngModel)]="model.standard.filterValue"
+        [items]="standardDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="standard">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.brand.label ?? ''"
+        [(ngModel)]="model.brand.filterValue"
+        [items]="brandDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="brand">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.application.label ?? ''"
+        [(ngModel)]="model.application.filterValue"
+        [items]="applicationDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="application">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3 mt-2">
+      <br>
+      <app-mehr-button
+        [bgColor]="'primary'"
+        (onClick)="search()"
+        class="me-2">
+        جستجو
+      </app-mehr-button>
+
+      <app-mehr-button
+        [bgColor]="'secondary'"
+        (onClick)="reset()">
+        پاک کردن
+      </app-mehr-button>
+    </div>
+  </form>
+</app-mehr-filter-grid>

@@ -1,0 +1,22 @@
+export const environment = {
+  production: false,
+  UserManagement: 'http://10.60.7.72:8087/api/',
+  Ranking: 'http://10.60.7.72:8082/api/',
+  Workflow: 'http://10.60.7.72:8082/api/',
+  ServiceDesk: 'http://10.60.7.72:8082/api/',
+  calculate: 'http://10.60.7.72:9091/api/',
+  SsoUrl: 'http://10.180.7.11:8443/cas/Login?service=',
+  Investigation: 'http://10.180.7.11:9094/api/',
+  Legal: 'http://10.180.7.11:7020/api/',
+  Judicial: 'http://10.180.7.11:9094/api/',
+  WalletAdmin: ' http://10.60.7.78:9098/api/',
+  Tsb: 'http://10.60.7.72:9099/api/',
+  wallet: ' http://10.170.1.97:80/api/',
+  Accounting: ' http://10.60.7.78:7140/api/',
+  CustomInsuranceEngine: 'http://10.60.7.82:216/api/',
+  Ticketing: 'http://10.180.7.11:9095/api/',
+  InsuranceEngine: ' http://10.60.7.78:7088/api/',
+  LifeInsurance: 'http://10.180.7.11:7041/api/',
+  Broker_LifeInsurance: 'http://10.180.7.11:7042/api/',
+
+};

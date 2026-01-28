@@ -1,0 +1,116 @@
+.mat-select-trigger .mat-select-value {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.setBored {
+  border: 1px solid #3f51b5 !important;
+}
+
+.search-multi::placeholder {
+  padding-right: 10px;
+}
+
+.multiselect {
+  cursor: pointer;
+
+  li {
+    float: right;
+    font-size: .86rem;
+    padding: 4px 9px;
+    margin-left: 6px;
+    background-color: #EEE;
+    position: relative;
+    bottom: 4px;
+    border-radius: 4px;
+    -webkit-animation: multiselect 1s both;
+    animation: multiselect .4s both;
+
+    @keyframes multiselect {
+      0% {
+        transform: translate(-20px, 0);
+      }
+
+      100% {
+      }
+    }
+  }
+}
+
+.mat-select-trigger {
+
+
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+
+  padding: 6px;
+  height: 35px;
+  border-radius: 5px !important;
+  border: 1px solid #DDDEE1 !important;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+}
+
+
+.mat-select-panel {
+  background-color: #FFF;
+  text-align: right;
+  color: #fff;
+  direction: rtl;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1) !important;
+
+  .mat-option-text {
+    color: #333;
+    font-family: samim;
+    text-align: right;
+  }
+
+  .mat-pseudo-checkbox {
+
+    border: 1px solid #c7c7c7;
+    background-color: #f9f9f9;
+    width: 15px;
+    height: 15px;
+  }
+
+  .mat-option-pseudo-checkbox {
+    margin-left: 10px;
+  }
+
+  /* Show the mat-pseudo-checkbox when checked */
+  .mat-pseudo-checkbox.mat-pseudo-checkbox-checked,
+  .mat-pseudo-checkbox.mat-pseudo-checkbox-indeterminate {
+    border: 1px solid $color_blue_navigation;
+    background: $color_blue_navigation !important;
+  }
+
+  .mat-pseudo-checkbox-checked::after {
+    top: 4px;
+    left: 2px;
+    color: #fff;
+    border: 1px solid;
+    border-right: 0;
+    border-top: 0;
+  }
+}
+
+
+.mat-select-value-text {
+  color: #333;
+}
+
+.mat-select-arrow {
+  color: #999;
+  margin-left: 10px !important;
+}
+
+.mat-select-panel {
+  transform: translate(-13px, 37px) !important;
+}

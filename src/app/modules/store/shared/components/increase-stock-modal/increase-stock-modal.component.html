@@ -1,0 +1,34 @@
+<div class="modal-header">
+  <h4 class="modal-title">افزایش موجودی</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="formGroup">
+    <div class="row">
+      <div class="col-md-6">
+        <app-mehr-input [label]="data.itemType === 'hose' ? 'متراژ برای افزایش' : 'تعداد برای افزایش'"
+                        formControlName="addedAmount"
+                        numbersOnly
+                        [required]="true">
+        </app-mehr-input>
+      </div>
+      <div class="col-md-6">
+        <app-mehr-input [label]="data.itemType === 'hose' ? 'قیمت خرید هر متر (بار جدید)' : 'قیمت خرید هر واحد (بار جدید)'"
+                        formControlName="newEnterPrice"
+                        numbersOnly
+                        [required]="true">
+        </app-mehr-input>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <app-mehr-button (onClick)="activeModal.dismiss()">انصراف</app-mehr-button>
+  <app-mehr-button bgColor="success"
+                   [disabled]="formGroup.invalid"
+                   (onClick)="onSave()">
+    ذخیره تغییرات
+  </app-mehr-button>
+</div>

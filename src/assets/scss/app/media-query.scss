@@ -1,0 +1,27 @@
+  //smartphones to down
+  // @mixin phone-screen {
+
+  //   @media (max-width: 768px) { @content; }
+  // }
+  
+  //smartphones to tablet
+  @mixin tablet-to-up {
+
+    @media (min-width: 768px) { @content; }
+  }
+  
+
+  // small devices, tablets
+  @mixin tablet-screen {
+    @media (min-width: 768px) and (max-width: 992px) { @content; }
+  }
+
+  //medium devices
+  @mixin small-desktop-sceeen  {
+    @media (min-width: 992px) and (max-width : 1200px) { @content; }
+  }
+
+  //large devices
+  @mixin big-desktop-screen {
+    @media (min-width: 1200px) and (max-width : 1440px) { @content; }
+  }

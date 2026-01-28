@@ -1,0 +1,43 @@
+.login_background{
+  background-color: #F3F9FF ;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .login_box{
+    width: 400px;
+    margin:auto;
+    .icon_holder{
+      text-align: center;
+      color: #2E3192;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .form_holder{
+      background: #fff;
+      border-radius: 7px;
+      border: 1px solid #e7e7e7;
+      box-shadow: 0 0 5px rgba(0,0,0,.1);
+      padding: 30px 26px 42px;
+      button{
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+
+.captcha{
+  margin-top: 26px;
+  >div{
+    padding: 6px 36px;
+    height: 60px;
+    img{
+      margin-top: 16px;
+      border-left: 1px solid #DDDEE1 ;
+      padding-left: 20px;
+    }
+  }
+
+}
+

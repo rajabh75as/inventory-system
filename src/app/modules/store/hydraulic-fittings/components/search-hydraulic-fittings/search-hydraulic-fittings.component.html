@@ -1,0 +1,86 @@
+<app-mehr-filter-grid [collapseSearchPanel]="isOpen">
+  <form class="row">
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.code.label ?? ''"
+        [(ngModel)]="model.code.filterValue"
+        name="code"
+        maxlength="50"
+        [placeholder]="'کد قطعه را وارد کنید'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.threadType.label ?? ''"
+        [(ngModel)]="model.threadType.filterValue"
+        [items]="threadTypeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="threadType">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.size.label ?? ''"
+        [(ngModel)]="model.size.filterValue"
+        name="size"
+        maxlength="20"
+        [placeholder]="'اندازه (مثلاً: 1/2، 3/8)'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.angle.label ?? ''"
+        [(ngModel)]="model.angle.filterValue"
+        [items]="angleDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="angle">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.gender.label ?? ''"
+        [(ngModel)]="model.gender.filterValue"
+        [items]="genderDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="gender">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.material.label ?? ''"
+        [(ngModel)]="model.material.filterValue"
+        [items]="materialDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="material">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3 mt-2">
+      <br>
+      <app-mehr-button
+        [bgColor]="'primary'"
+        (onClick)="search()"
+        class="me-2">
+        جستجو
+      </app-mehr-button>
+
+      <app-mehr-button
+        [bgColor]="'secondary'"
+        (onClick)="reset()">
+        پاک کردن
+      </app-mehr-button>
+    </div>
+  </form>
+</app-mehr-filter-grid>

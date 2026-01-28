@@ -1,0 +1,75 @@
+.hidePassword-mat {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 18px;
+  top: 37px;
+  color: #959595;
+  cursor: pointer;
+}
+
+.hidePassword-input {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  color: #959595;
+  cursor: pointer;
+}
+
+.cols {
+  position: relative;
+}
+
+
+.input-tooltip {
+  display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: #383636;
+  //top: -13px;
+  //left: 0px;
+  border-radius: 5px;
+  color: #fff;
+  min-width: 0;
+  z-index: 11;
+  max-width: 350px;
+  min-height: 0;
+
+  p {
+    padding: 5px 10px;
+    margin: 0;
+    text-align: justify;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    font-family: Samim;
+
+  }
+}
+
+.input-tooltip-icon:hover .input-tooltip {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.inquiry {
+  input {
+    border: 1px solid #008000 !important;
+    background-color: #e1eae1 !important;
+
+    &:disabled {
+      background-color: #e1eae1 !important;
+    }
+  }
+}

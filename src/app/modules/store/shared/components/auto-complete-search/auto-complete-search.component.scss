@@ -1,0 +1,27 @@
+
+:host {
+  border: 1px solid transparent !important;
+  display: block !important;
+
+  &.ng-invalid.ng-touched .form-control {
+    border-color: #d70b1e !important;
+  }
+
+}
+
+.search-item-title {
+  font-weight: bold !important;
+  padding: 10px;
+}
+
+
+::ng-deep.autocomplete-container .suggestions-container ul li {
+  border-bottom: 1px solid #cdc9c9 !important;
+}
+
+
+i {
+  font-size: 25px;
+  color: #b5b1b1;
+  padding: 20px;
+}

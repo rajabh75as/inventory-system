@@ -1,0 +1,120 @@
+<div class="submit_box d-flex justify-content-between align-items-center">
+  <div class="box-radio">
+    <h5>{{ id ? 'ویرایش قطعه' : 'ثبت قطعه جدید' }}</h5>
+  </div>
+  <app-mehr-button class="btn-grid" (onClick)="onBack()">بازگشت</app-mehr-button>
+</div>
+
+<form [formGroup]="formGroup">
+  <div class="row form-container p-1 pt-3 pb-3">
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'کد قطعه'"
+        formControlName="code"
+        [required]="true">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'نام قطعه'"
+        formControlName="name"
+        [required]="true">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="'نوع قطعه'"
+        formControlName="type"
+        [items]="typeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="'مناسب برای شیلنگ'"
+        formControlName="compatibleHoseSize"
+        [items]="hoseSizeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'تعداد موجودی'"
+        formControlName="count"
+        numbersOnly
+        [required]="true"
+        [inputType]="'number'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'قیمت خرید (ورود)'"
+        formControlName="enterPrice"
+        numbersOnly
+        [required]="true"
+        [inputType]="'number'"
+        [placeholder]="'قیمت به ریال'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'توضیحات'"
+        formControlName="description"
+        [placeholder]="'توضیحات اضافی...'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'شماره قفسه'"
+        formControlName="shelf"
+        numbersOnly
+        [required]="true"
+        [inputType]="'number'"
+        [placeholder]="''">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'ردیف'"
+        formControlName="row"
+        numbersOnly
+        [required]="true"
+        [inputType]="'number'"
+        [placeholder]="''">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="'ستون'"
+        formControlName="column"
+        numbersOnly
+        [required]="true"
+        [inputType]="'number'"
+        [placeholder]="''">
+      </app-mehr-input>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3 mt-1">
+      <br>
+      <app-mehr-button
+        bgColor="success"
+        [disabled]="formGroup.invalid"
+        (onClick)="onSave()">
+        {{ id ? 'ثبت تغییرات' : 'ذخیره' }}
+      </app-mehr-button>
+    </div>
+  </div>
+</form>

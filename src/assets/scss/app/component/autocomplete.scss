@@ -1,0 +1,92 @@
+.ng-autocomplete.form-control {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+  height: 35px;
+}
+
+
+.autocomplete-container .suggestions-container ul .item {
+  width: 100%;
+}
+
+.autocomplete_input {
+  input {
+    display: block;
+    width: 100%;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    background-color: #fcfcff !important;
+    padding: 6px !important;
+    height: 35px !important;
+    border-radius: 0.25rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
+
+.ng-autocomplete {
+  width: 100% !important;
+  background-color: #fcfcff;
+
+  &:focus {
+    border-color: #3f51b5 !important;
+    box-shadow: unset !important;
+  }
+}
+
+.autocomplete-container {
+  box-shadow: none !important;
+  bottom: 2px;
+  height: 30px;
+
+  input {
+    background: none !important;
+    padding: 0 10px !important;
+    height: 35px !important;
+  }
+
+  .input-container .x {
+    z-index: 2;
+    right: unset !important;
+    left: 0 !important;
+    top: 13px !important;
+
+    i {
+      z-index: 1;
+      background: #FFF;
+      font-size: 18px !important;
+
+    }
+
+    input {
+      background: none !important;
+      padding: 0 10px !important;
+      height: 35px !important;
+    }
+  }
+
+  .suggestions-container {
+    top: 29px;
+    z-index: 1;
+
+    ul {
+      max-height: 200px;
+
+      li {
+        text-align: right;
+
+        a {
+          padding: 6px 15px !important;
+          font-size: 14px !important;
+          font-weight: 100 !important;
+        }
+      }
+    }
+  }
+
+  input {
+    height: 25px !important;
+    background: 0 0 !important;
+  }
+}

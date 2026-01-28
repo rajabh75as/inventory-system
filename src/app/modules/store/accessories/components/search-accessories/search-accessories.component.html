@@ -1,0 +1,66 @@
+<app-mehr-filter-grid [collapseSearchPanel]="isOpen">
+  <form class="row">
+    <!-- ردیف اول -->
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.code.label ?? ''"
+        [(ngModel)]="model.code.filterValue"
+        name="code"
+        maxlength="50"
+        [placeholder]="'کد قطعه را وارد کنید'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.name.label ?? ''"
+        [(ngModel)]="model.name.filterValue"
+        name="name"
+        maxlength="100"
+        [placeholder]="'نام قطعه را وارد کنید'">
+      </app-mehr-input>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.type.label ?? ''"
+        [(ngModel)]="model.type.filterValue"
+        [items]="typeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="type">
+      </app-mehr-select>
+    </div>
+
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.compatibleHoseSize.label ?? ''"
+        [(ngModel)]="model.compatibleHoseSize.filterValue"
+        [items]="hoseSizeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="compatibleHoseSize">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3 mt-2">
+      <br>
+      <app-mehr-button
+        [bgColor]="'primary'"
+        (onClick)="search()"
+        class="me-2">
+        جستجو
+      </app-mehr-button>
+
+      <app-mehr-button
+        [bgColor]="'secondary'"
+        (onClick)="reset()">
+        پاک کردن
+      </app-mehr-button>
+    </div>
+  </form>
+</app-mehr-filter-grid>

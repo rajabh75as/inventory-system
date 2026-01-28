@@ -1,0 +1,210 @@
+{
+  "metaData": [
+    {
+      "category": 1,
+      "description": "مدارک ثبتی و حقوقی",
+      "files": [
+        {
+          "caption": "اسکن قرارداد اجاره یا سند مالکیت محل شرکت",
+          "aliasName": "companyLocationContract"
+        }
+      ]
+    },
+    {
+      "category": 2,
+      "description": " مدارک مالی",
+      "files": [
+        {
+          "caption": "فایل pdf صورت مالی برای 3 سال گذشته همراه با مهر و امضاء شرکت",
+          "aliasName": "threeYearsFinancialStatement"
+        },
+        {
+          "caption": "اسکن تراز آزمایشی در سطح کل و معین برای سال  جاری همراه با مهر و امضاء شرکت",
+          "aliasName": "lastYearSignedLedgerAndDesignated"
+        },
+        {
+          "caption": "اسکن مدارک پشتیبان فروش سال جاری شامل فاکتورهای فروش، ریز صورت معاملات فصلی، اظهارنامه ارزش افزوده فصلی و مبالغ واریز شده به حساب شرکت ",
+          "aliasName": "lastYearStatementOfDetailedTransactions"
+        },
+        {
+          "caption": "اسکن گزارش گردش بانکی سال گذشته به تفکیک ماه برای شرکت و هریک از اعضای هیات مدیره با مهر و امضاء شرکت",
+          "aliasName": "boardMembersTurnover"
+        },
+        {
+          "caption": "اجازه نامه استعلام رفتار اعتباری (پیوست ایمیل) تکمیل شده توسط شرکت (حقوقی) و کلیه اعضاء هیئت مدیره (حقیقی)",
+          "aliasName": "boardMembersCreditBehaviorInquiryPermission"
+        },
+        {
+          "caption": "اسکن آخرین لیست بیمه تامین اجتماعی کارکنان شرکت",
+          "aliasName": "lastEmployeesInsuranceList"
+        },
+        {
+          "caption": "گزارش فنی محصولات شرکت",
+          "aliasName": "productsTechnicalReport"
+        },
+        {
+          "caption": "آخرین لیست تسهیلات و ضمانتنامه های فعال شرکت",
+          "aliasName": "lastLoanslist"
+        },
+        {
+          "caption": "لیست قراردادهای دو سال اخیر به همراه قراردادهای جاری به همراه زمان شروع و پایان، درصد پیشرفت (تایید صورت وضعیت)، درصد مبلغ دریافتی و مبلغ باقیمانده ",
+          "aliasName": "twoYearsAndCurrentContracts"
+        },
+        {
+          "caption": "عکس از محل فعالیت شرکت (دفتر مرکزی، کارگاه و...)",
+          "aliasName": "officePicture"
+        }
+      ]
+    },
+    {
+      "category": 3,
+      "description": " سایر مدارک",
+      "files": [
+        {
+          "caption": "گزارش امکان¬سنجی بازار، فنی، مالی و اقتصادی طرح",
+          "aliasName": "feasibilityReport"
+        },
+        {
+          "caption": "اسکن جواز تاسیس، پروانه بهره برداری، جواز توسعه، پروانه بازرگانی، پروانه اکتشاف، استانداردها، تاییدیه¬ها، ثبت اختراع، نامه حسن انجام کار کارفرمایان و ...",
+          "aliasName": "establishmentPermit"
+        }
+      ]
+    },
+    {
+      "category": 4,
+      "description": " مدارک شناسایی ، فعالیت و اموال شخص حقوقی",
+      "files": [
+        {
+          "caption": "درخواست کتبی شرکت/ امضا داران مجاز( ضمن مشخص نمودن مبلغ و نوع تسهیلات درخواستی",
+          "aliasName": "signedvalidationRequest"
+        },
+        {
+          "caption": " اساسنامه/ شرکت نامه/ اظهارنامه ثبت شرکتها/آگهی تاسیس/شناسه ملی/ کداقتصادی(کارت مودیان اقتصادی) ",
+          "aliasName": "companyStatute"
+        },
+        {
+          "caption": "آگهی تغییرات شرکت",
+          "aliasName": "announcementOfCompanyChanges"
+        },
+        {
+          "caption": " مجوز فعالیت با توجه به نوع فعالیت اعم از پروانه تاسیس، پروانه بهره برداری، کارت بازرگانی و ... ",
+          "aliasName": "activityPermission"
+        },
+        {
+          "caption": "کارت عضویت در اتحادیه",
+          "aliasName": "membershipCard"
+        },
+        {
+          "caption": " مدارک و مستندات مربوط به محل فعالیت شخص حقوقی اعم از سند مالکیت، سرقفلی، اجاره نامه ",
+          "aliasName": "companylocationcontract"
+        },
+        {
+          "caption": " حداقل یک یا دو قبض شرکتهای خدماتی( آب،برق، گاز، تلفن) مربوط به چهار دوره اخیر ",
+          "aliasName": "lastFourBills"
+        },
+        {
+          "caption": " اموال منقول، غیرمنقول، سهام شرکتها و ... مربوط به شخص حقوقی، مدیران و سهامداران عمده ",
+          "aliasName": "financialAbilityAndProperty"
+        }
+      ]
+    },
+    {
+      "category": 5,
+      "description": "استعلامات مورد نیاز",
+      "files": [
+        {
+          "caption": "استعلامات ماده 21 و تسهیلات و تعهدات متقاضی نزد شبکه بانکی از سامانه بانک مرکزی و بانک قرض الحسنه مهر ایران",
+          "aliasName": "inquiriesOfArticle21"
+        },
+        {
+          "caption": "استعلام از حوزه مالیاتی",
+          "aliasName": "taxInquiries"
+        },
+        {
+          "caption": "صورت ریز تسهیلات و تعهدات اشخاص حقیقی و حقوقی مرتبط و ذینفع واحد نزد این بانک",
+          "aliasName": "LastLoanslist"
+        },
+        {
+          "caption": "تکمیل پرسشنامه اعتباری",
+          "aliasName": "creditQuestionnaire"
+        },
+        {
+          "caption": "تاییدیه از شرکت حسابرسی مربوطه مبنی بر اصالت گزارش های منتشر شده",
+          "aliasName": "auditCompanyConfirmation"
+        },
+        {
+          "caption": "استعلام صحت مجوز فعالیت شرکت",
+          "aliasName": "activityPermissionConfirmation"
+        },
+        {
+          "caption": "استعلام کد پستی",
+          "aliasName": "postalCodeInquiry"
+        }
+      ]
+    },
+    {
+      "category": 6,
+      "description": "گزارشات عمومی",
+      "files": [
+        {
+          "caption": "گزارش بودجه و هزینه های واقعی",
+          "aliasName": "budgetReport"
+        },
+        {
+          "caption": "استراتژی ها و برنامه های راهبردی",
+          "aliasName": "strategies"
+        },
+        {
+          "caption": "گزارش فعالیت هیئت مدیره به مجمع",
+          "aliasName": "boardMembersActivityReport"
+        },
+        {
+          "caption": "مفاصا حساب مالیات عملکرد،تکلیفی، ارزش افزوده",
+          "aliasName": "recoupmentAccount"
+        },
+        {
+          "caption": "مفاصا حساب مالیات عملکرد،تکلیفی، ارزش افزوده",
+          "aliasName": "lastYearTaxDeclaration"
+        },
+        {
+          "caption": "برگ قطعی/ تشخیص مالیات عملکرد سالهای ... و ...",
+          "aliasName": "latsTwoYearsDefiniteTaxReport"
+        },
+        {
+          "caption": "مستندات مربوط به پرداخت مالیات تکلیفی/ عملکرد/ ارزش افزوده",
+          "aliasName": "taxPaymentDocuments"
+        },
+        {
+          "caption": "دفاتر قانونی سال، صورتهای مالی تایید شده توسط شرکت حسابرسی مربوط به سه سال آخر و تراز آزمایشی به تاریخ روز",
+          "aliasName": "lastThreeYearsLedger"
+        },
+        {
+          "caption": "گزارش تولید و فروش دو دوره اخیر به تفکیک محصولات",
+          "aliasName": "lastTwoPeriodProductionAndSalesReport"
+        },
+        {
+          "caption": "نمونه برگه های واردات و صادرات گمرکی و فاکتورهای فروش سال جاری و گذشته",
+          "aliasName": "lastTwoYearsImportAndExportSheets"
+        },
+        {
+          "caption": "پرینت حساب های بانکی نزدبانک قرض الحسنه مهر ایران و سایر بانک ها",
+          "aliasName": "companyTurnovers"
+        }
+      ]
+    },
+    {
+      "category": 7,
+      "description": "مدارک وثایق و تضامین",
+      "files": [
+        {
+          "caption": "مدارک و مستندات مربوط به وثایق و تضامین تسهیلات اعطایی",
+          "aliasName": "companyLoansDocuments"
+        },
+        {
+          "caption": "مدارک و مستندات مربوط به محل جرای طرح",
+          "aliasName": "startupLocationDocuments"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+.ag-column-drop-horizontal,
+.ag-side-buttons,
+.ag-tab-header {
+  border: 1px solid #aed0ea !important;
+  background: #deedf7 url(widgetHeader.png) 50% 50% repeat-x !important;
+  color: #222 !important;
+  font-weight: bold !important;
+}
+.ag-header-cell,
+.ag-side-button > button,
+.ag-tool-panel-wrapper input[type="button"] {
+  border: 1px solid #aed0ea !important;
+  background: #d7ebf9 url(stateDefault.png) 50% 50% repeat-x !important;
+  font-weight: bold !important;
+  color: #2779aa !important;
+}
+.ag-header-cell:hover,
+.ag-side-button > button:hover,
+.ag-tool-panel-wrapper input[type="button"]:hover,
+.ag-row:hover,
+.ag-menu .ag-menu-option-active {
+  border: 1px solid #74b2e2 !important;
+  background: #e4f1fb url(stateHover.png) 50% 50% repeat-x !important;
+  font-weight: bold !important;
+  color: #0070a3 !important;
+}
+.ag-tool-panel-wrapper,
+.ag-row,
+.ag-menu {
+  border: 1px solid #ddd !important;
+  background: #f2f5f7 url(widgetContent.png) 50% top repeat-x !important;
+  color: #362b36 !important;
+}
+.ag-menu{
+    box-shadow: 2px 2px 5px 1px lightgrey !important;
+}
+.ag-side-buttons {
+  background-image: none !important;
+}
+html .ag-row-selected {
+  border: 1px solid #f9dd34 !important;
+  background: #ffef8f !important;
+  color: #363636 !important;
+}
+.ag-column-drop-horizontal {
+  border-top-right-radius: 6px !important;
+  border-top-left-radius: 6px !important;
+  border-bottom: none !important;
+}
+.ag-tool-panel-wrapper input[type="button"] {
+  padding: 2px 10px 2px 10px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+.ag-row {
+  border-top: none !important;
+}
+.ag-header-viewport {
+  background: #deedf7 url(stateDefault.png) 50% 50% repeat-x !important;
+  border-top: 1px solid #aed0ea !important;
+  border-left: 1px solid #aed0ea !important;
+  border-bottom: 1px solid #aed0ea !important;
+}
+.ag-header-cell {
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.ag-header-cell.ag-column-hover {
+  border-top: none !important;
+  border-left: 1px solid #aed0ea !important;
+  border-bottom: 1px solid #aed0ea !important;
+  border-right: none !important;
+}
+.ag-header-cell:first-child {
+  border-right: 1px solid #aed0ea !important;
+}
+.ag-header {
+  border: none !important;
+}
+.ag-row:hover {
+  border-top: none !important;
+}
+.ag-status-bar{
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-color:#aed0ea !important;
+}

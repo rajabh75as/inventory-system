@@ -1,0 +1,181 @@
+/* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-balham.css";
+@import "@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "font-awesome/css/font-awesome.min.css";
+@import 'ngx-toastr/toastr';
+@import "assets/scss/main.scss";
+
+:root {
+  --bg-gray: #EBEAE9;
+  --bg-white: white;
+  --bg-black: black;
+  --bg1: #84bd00;
+  --size: 5px;
+  --color: #707070;
+  --bg-btn: #1E8BC3;
+  --bg-title: #D9EAB1;
+  --bg-border-gray: #81857A;
+  --border-radius: 7px;
+  --font-size-mediume: 0.85rem;
+  --font-size-big: 1.4rem;
+  --border-radius-circle: 50vw;
+  --border: 1px solid var(--bg-border-gray);
+  --box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);
+  --size-circle-splash: 600px;
+  --size-rectangle-splash: 80px;
+}
+
+.error-control {
+  margin: -3px 20px 0 0;
+  color: red;
+  font-size: 12px;
+}
+
+.error-date-picker {
+  margin: -30px 20px 0 0;
+  color: red;
+  font-size: 12px;
+}
+
+.error-amount {
+  margin: -20px 20px 0 0;
+  color: red;
+  font-size: 12px;
+}
+
+.total {
+  position: relative;
+}
+
+.box-svg {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  width: 40px;
+  height: 35px;
+  background-color: dodgerblue;
+  border-radius: 7px;
+  padding: 3px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.box-svg:hover {
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box-svg svg path {
+  fill: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+//:root {
+//    --bg-green:#84BD00;
+//    --bg-brown:#5B3427;
+//    --bg-gray:#B1B3B3;
+//    --bg-beige:#D6D2C4;
+//    --bg-black:black;
+//    --bg-wiht:#FDFDFEFF;
+//
+//    --bg-green-hover: rgba(132, 189, 0, 0.75);
+//    --bg-brown-hover: rgba(91, 52, 39, 0.75);
+//    --bg-gray-hover: rgba(177, 179, 179, 0.75);
+//    --bg-beige-hover: rgba(214, 210, 196, 0.75);
+//
+//    --border-radius:0.75rem;
+//    --border-radius-circle:50%;
+//
+//    --border-normal-green:1px solid var(--bg-green);
+//    --border-normal-brown:1px solid var(--bg-brown);
+//    --border-normal-gray:1px solid var(--bg-gray);
+//    --border-normal-beige:1px solid var(--bg-beige);
+//
+//    --border-thick-green:2px solid var(--bg-green);
+//    --border-thick-brown:2px solid var(--bg-brown);
+//    --border-thick-gray:2px solid var(--bg-gray);
+//    --border-thick-beige:2px solid var(--bg-beige);
+//}
+//
+//  --box-shadow-default:;
+//  --box-shadow-green:;
+//  --box-shadow-brown:;
+//  --box-shadow-gray:;
+//  --box-shadow-beige:;
+//
+//  --font--family-light:;
+//  --font--family-medium:;
+//  --font--family-bold:;
+//
+//  --font-size-x-small:;
+//  --font-size-small:;
+//  --font-size-medium:;
+//  --font-size-larg:;
+//  --font-size-x-larg:;
+//}
+.cared-header {
+  background: #84bd00 !important;
+}
+
+.tooltip-form-select {
+  display: none !important;
+}
+
+.center-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog .modal-content .modal-header {
+  text-align: right !important;
+}
+
+.alert-title {
+  padding: 5px;
+}
+
+.red-color {
+  color: #e81d4d;
+}
+
+.sub-label {
+  font-size: 11px;
+  margin-right: 14px;
+  margin-top: -7px;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.2rem;
+}
+
+button[disabled] {
+  cursor: not-allowed !important;
+  background-color: #9b9b9b !important;
+}
+
+
+.dark-warning {
+  background-color: #fc9953 !important;
+}
+

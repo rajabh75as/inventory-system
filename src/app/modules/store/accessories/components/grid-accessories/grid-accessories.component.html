@@ -1,0 +1,21 @@
+<div class="total">
+<div class="box-svg" style="" title="به روز رسانی" (click)="refresh()">
+  <svg viewBox="0 0 1000 1000">
+    <g>
+      <path
+        d="M732.9,671.7c-52,74.8-136.9,123.6-232.8,123.6c-157.3,0-285.4-131.5-286.3-293.5h93.4L158.5,349L10,501.7h93.6c0.9,225,178.1,407.1,396.5,407.1c126.5,0,239-61.1,311.7-156.2L732.9,671.7"/>
+      <path
+        d="M928.8,502.2L928.8,502.2l-32.2,0v0c0-0.7,0.1-1.5,0.1-2.2c0-225.8-177.5-408.9-396.5-408.9c-127.5,0-240.9,62.1-313.4,158.6l78.9,81.1c51.8-76.2,137.6-126.1,234.5-126.1c157.9,0,286.4,132.5,286.4,295.3c0,0.7-0.1,1.5-0.1,2.2v0h-34.9l0,0h-58.7L841.5,655L990,502.2H928.8"/>
+    </g>
+  </svg>
+</div>
+<app-mehr-grid [columnDefs]="columnDefs"
+               [gridData]="rowData"
+               [frameworkComponents]="frameworkComponents"
+               [paginationPageSize]="50"
+               [pagination]="true"
+               [cacheBlockSize]="50"
+               (paramRequest)="onGetGrid($event)"
+               #GridRealCustomersComponent>
+</app-mehr-grid>
+</div>
