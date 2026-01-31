@@ -12,6 +12,7 @@ const routes: Routes = [
       {path: 'hydraulic-fittings', loadChildren: () => import('./hydraulic-fittings/hydraulic-fittings.module').then(m => m.HydraulicFittingsModule)},
       {path: 'hoses', loadChildren: () => import('./hoses/hoses.module').then(m => m.HosesModule)},
       {path: 'low-stock-reports', loadChildren: () => import('./low-stock-reports/low-stock-reports.module').then(m => m.LowStockReportsModule)},
+      {path: 'sells-reports', loadChildren: () => import('./sells-reports/sells-reports.module').then(m => m.SellsReportsModule)},
     ]
   }
 ];

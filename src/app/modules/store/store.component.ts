@@ -79,6 +79,14 @@ export class StoreComponent implements OnInit {
             icon: 'fa-exclamation-triangle',
             hasSubMenu: false,
             subMenu: []
+          },
+          {
+            title: 'گزارش فروش',
+            alias: 'sales-reports',
+            path: '/store/sells-reports/page',
+            icon: 'fa-line-chart',
+            hasSubMenu: false,
+            subMenu: []
           }
         ]
       }

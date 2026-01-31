@@ -22,7 +22,7 @@ export class GridLowStockReportsComponent implements OnInit {
   categoryMap: { [key: string]: string } = {
     Accessory: 'سایر قطعات',
     GasAccessory: 'لوازم گاز',
-    Hose: 'مدیریت شلنگ ها',
+    Hose: 'شلنگ ها',
     HydraulicFitting: 'اتصالات هیدرولیک',
     WaterFitting: 'اتصالات آب'
   };

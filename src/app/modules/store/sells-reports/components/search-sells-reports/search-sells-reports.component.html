@@ -1,0 +1,79 @@
+<app-mehr-filter-grid [collapseSearchPanel]="isOpen">
+  <form class="row">
+    <div class="col-md-3">
+      <app-mehr-select
+        [label]="model.itemType.label ?? ''"
+        [(ngModel)]="model.itemType.filterValue"
+        [items]="itemTypeTypeDrop"
+        [bindValue]="'id'"
+        [bindTitle]="'name'"
+        [emptyOption]="true"
+        name="itemType">
+      </app-mehr-select>
+    </div>
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.itemName.label ?? ''"
+        [(ngModel)]="model.itemName.filterValue"
+        name="itemName"
+        maxlength="100"
+        placeholder="نام کالا">
+      </app-mehr-input>
+    </div>
+    <div class="col-md-3">
+      <app-mehr-input
+        [label]="model.fromDate.label ?? ''"
+        [(ngModel)]="model.fromDate.filterValue"
+        name="fromDate">
+      </app-mehr-input>
+    </div>
+    <div class="col-md-3 mt-2">
+      <app-mehr-input
+        [label]="model.toDate.label ?? ''"
+        [(ngModel)]="model.toDate.filterValue"
+        name="toDate">
+      </app-mehr-input>
+    </div>
+    <div class="col-md-9 mt-4 d-flex justify-content-start">
+
+      <app-mehr-button class="me-2" (onClick)="setToday()">
+        امروز
+      </app-mehr-button>
+
+      <app-mehr-button class="me-2" (onClick)="setQuickDate(7)">
+        ۷ روز اخیر
+      </app-mehr-button>
+
+      <app-mehr-button class="me-2" (onClick)="setQuickDate(30)">
+        ۱ ماه اخیر
+      </app-mehr-button>
+      <app-mehr-button (onClick)="setQuickDate(90)">
+        ۳ ماه اخیر
+      </app-mehr-button>
+      <app-mehr-button class="me-2" (onClick)="setQuickDate(180)">
+        ۶ ماه اخیر
+      </app-mehr-button>
+
+      <app-mehr-button (onClick)="setQuickDate(365)">
+        ۱ سال اخیر
+      </app-mehr-button>
+
+    </div>
+    <div class="col-md-3">
+      <br>
+      <app-mehr-button
+        [bgColor]="'primary'"
+        (onClick)="search()"
+        class="me-2">
+        جستجو
+      </app-mehr-button>
+
+      <app-mehr-button
+        [bgColor]="'secondary'"
+        (onClick)="reset()">
+        پاک کردن
+      </app-mehr-button>
+    </div>
+
+  </form>
+</app-mehr-filter-grid>

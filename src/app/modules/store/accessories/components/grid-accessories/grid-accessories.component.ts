@@ -226,10 +226,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
       let item = event.filterModel[i];
       this.filter[item.columnName] = item.filterValue;
     }
-    if (this.sortOption) {
-      this.filter.orderBy = this.sortOption?.OrderBy;
-      this.filter.isAsc = this.sortOption?.IsAsc;
-    }
     this.accessoriesService.getAll(this.filter).pipe(takeUntil(this._destroy)).subscribe(res => {
       this.rowData = {rowDatas: res?.items, total: res?.totalCount};
       this.grid?.sizeColumnsToFit();
