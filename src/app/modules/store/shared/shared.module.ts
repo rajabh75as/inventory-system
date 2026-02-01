@@ -7,17 +7,11 @@ import { MehrButtonModule } from "@mehr/mehr-button";
 import { MehrInputModule } from "@mehr/mehr-input";
 import { MehrGridModule } from "@mehr/mehr-grid";
 import { MehrSelectModule } from "@mehr/mehr-select";
-import { MehrMultiSelectModule } from "@mehr/mehr-multi-select";
 import { MehrFilterGridModule } from "@mehr/mehr-filter-grid";
-import { MehrTextAreaModule } from "@mehr/mehr-text-area";
 import { MehrDatePickerModule } from "@mehr/mehr-date-picker";
-import { MehrAutoCompleteModule } from "@mehr/mehr-auto-complete";
 import { MehrAmountInputModule } from "@mehr/mehr-amount-input";
-import { MehrInputDateModule } from "@mehr/mehr-input-date";
-import { MehrCheckBoxModule } from "@mehr/mehr-check-box";
 import { MehrConfirmPopupModule } from "@mehr/mehr-confirm-popup";
 import { ErrorMessageModule } from "@mehr/error-message";
-import { ArmanUploadFileFormDataModule } from "@mehr/mehr-upload-file-form-data";
 import { JalaliDateTimeModule, MaxDirectiveModule, MinDirectiveModule, PipeModule } from "@mehr/mehr-core-x";
 import { OndyNumberDirective } from "./directives/ondyNumber.directive";
 import { EnCharDirecrive } from "./directives/enChar.direcrive";
@@ -45,17 +39,11 @@ import {SellModalComponent} from "./components/sell-modal/sell-modal.component";
     MehrInputModule,
     MehrGridModule,
     MehrSelectModule,
-    MehrMultiSelectModule,
     MehrFilterGridModule,
-    MehrTextAreaModule,
     MehrDatePickerModule,
-    MehrAutoCompleteModule,
     MehrAmountInputModule,
-    MehrInputDateModule,
-    MehrCheckBoxModule,
     MehrConfirmPopupModule,
     ErrorMessageModule,
-    ArmanUploadFileFormDataModule,
     JalaliDateTimeModule,
     PipeModule,
     MinDirectiveModule,
@@ -77,17 +65,11 @@ import {SellModalComponent} from "./components/sell-modal/sell-modal.component";
     MehrInputModule,
     MehrGridModule,
     MehrSelectModule,
-    MehrMultiSelectModule,
     MehrFilterGridModule,
-    MehrTextAreaModule,
     MehrDatePickerModule,
-    MehrAutoCompleteModule,
     MehrAmountInputModule,
-    MehrInputDateModule,
-    MehrCheckBoxModule,
     MehrConfirmPopupModule,
     ErrorMessageModule,
-    ArmanUploadFileFormDataModule,
     JalaliDateTimeModule,
     PipeModule,
     MinDirectiveModule,

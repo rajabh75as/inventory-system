@@ -21,6 +21,11 @@ export class Utilities {
     return moment(current_date).
     locale('fa').format('YYYY/MM/DD');
   }
+  static getCustomCurrentDate(day: number) {
+    let today = new Date();
+    let date = new Date(new Date().setDate(today.getDate() - day))
+    return moment(date).locale('fa').format('YYYY/MM/DD');
+  }
   static convertMiladiToShamsi(p:any, fieldName:any): string {
     let param = p.data[fieldName];
     if (param !== null) {

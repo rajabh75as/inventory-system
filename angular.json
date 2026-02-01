@@ -33,8 +33,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/app/lang",
-              "src/app/configs",
-              "src/web.config"
+              "src/app/configs"
             ],
             "styles": [
               "src/styles.scss"
@@ -64,60 +63,6 @@
                 }
               ],
               "outputHashing": "all"
-            },
-            "bank-test": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.bank-test.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "7mb",
-                  "maximumError": "7mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "7mb",
-                  "maximumError": "7mb"
-                }
-              ]
-            },
-            "bank-live": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.bank-live.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "7mb",
-                  "maximumError": "7mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "7mb",
-                  "maximumError": "7mb"
-                }
-              ]
             },
             "development": {
               "buildOptimizer": false,

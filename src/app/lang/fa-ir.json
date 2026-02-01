@@ -23,8 +23,7 @@
   "CSNATIONALCODE_REQUIRED": "پر کردن فیلد شناسه ملی اجباری است",
   "OWNERSHIPTYPE_REQUIRED": "پر کردن فیلد نوع مالکیت اجباری است",
   "VALUE_REQUIRED": "پر کردن فیلد ارزش اجباری است",
-  "VEHICLETYPE_REQUIRED": "پر کردن فیلد نوع وسیله ی نقلیه اجباری است",
-  "VEHICLETYPE_REQUIRED": "پر کردن فیلد نوع وسیله ی نقلیه اجباری است",
+
   "INSURANCEHISTORY_MAX": "سابقه بیمه را به درستی وارد نمایید",
   "LASTJOBHISTORY_MAX": "سابقه آخرین شغل را به درستی وارد نمایید",
 

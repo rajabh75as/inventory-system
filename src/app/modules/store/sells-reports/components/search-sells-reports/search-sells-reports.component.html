@@ -21,21 +21,16 @@
       </app-mehr-input>
     </div>
     <div class="col-md-3">
-      <app-mehr-input
-        [label]="model.fromDate.label ?? ''"
-        [(ngModel)]="model.fromDate.filterValue"
-        name="fromDate">
-      </app-mehr-input>
+      <app-mehr-date-picker [label]="model.fromDate.label" [(ngModel)]="model.fromDate.filterValue"
+                            (changeSelect)="changeFromDate($event)" name="fromDate">
+      </app-mehr-date-picker>
     </div>
-    <div class="col-md-3 mt-2">
-      <app-mehr-input
-        [label]="model.toDate.label ?? ''"
-        [(ngModel)]="model.toDate.filterValue"
-        name="toDate">
-      </app-mehr-input>
+    <div class="col-md-3">
+      <app-mehr-date-picker [label]="model.toDate.label" [(ngModel)]="model.toDate.filterValue"
+                            [minDate]="model.fromDate.filterValue" [maxDate]="toDay" name="toDate">
+      </app-mehr-date-picker>
     </div>
     <div class="col-md-9 mt-4 d-flex justify-content-start">
-
       <app-mehr-button class="me-2" (onClick)="setToday()">
         امروز
       </app-mehr-button>

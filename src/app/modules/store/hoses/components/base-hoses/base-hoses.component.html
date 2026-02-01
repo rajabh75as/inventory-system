@@ -58,14 +58,14 @@
       </app-mehr-input>
     </div>
     <div class="col-md-3">
-      <app-mehr-input
+      <app-mehr-amount-input
         [label]="'قیمت خرید (متری)'"
         formControlName="entryPricePerMeter"
-        numbersOnly
+        [mask]="'separator.2'"
+        [separator]="','"
         [required]="true"
-        [inputType]="'number'"
         [placeholder]="'قیمت به ریال'">
-      </app-mehr-input>
+      </app-mehr-amount-input>
     </div>
     <div class="col-md-3">
       <app-mehr-select

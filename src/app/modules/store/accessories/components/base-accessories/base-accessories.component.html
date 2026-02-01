@@ -56,14 +56,14 @@
     </div>
 
     <div class="col-md-3">
-      <app-mehr-input
+      <app-mehr-amount-input
         [label]="'قیمت خرید (ورود)'"
         formControlName="enterPrice"
-        numbersOnly
         [required]="true"
-        [inputType]="'number'"
+        [mask]="'separator.2'"
+        [separator]="','"
         [placeholder]="'قیمت به ریال'">
-      </app-mehr-input>
+      </app-mehr-amount-input>
     </div>
 
     <div class="col-md-3">

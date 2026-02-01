@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {CountdownModule} from 'ngx-countdown';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgxSpinnerModule} from "ngx-spinner";
@@ -18,7 +17,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     NgxMaskModule.forRoot(),
-    CountdownModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,

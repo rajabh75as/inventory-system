@@ -70,14 +70,14 @@
       </app-mehr-input>
     </div>
     <div class="col-md-3">
-      <app-mehr-input
+      <app-mehr-amount-input
         label="قیمت خرید (ورود)"
         formControlName="enterPrice"
-        numbersOnly
+        [mask]="'separator.2'"
+        [separator]="','"
         [required]="true"
-        [inputType]="'number'"
         [placeholder]="'قیمت به ریال'">
-      </app-mehr-input>
+      </app-mehr-amount-input>
     </div>
     <div class="col-md-3">
       <app-mehr-input

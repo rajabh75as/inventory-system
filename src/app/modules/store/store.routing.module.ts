@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {StoreComponent} from "./store.component";
-import {AutoCompleteSearchComponent} from "./shared/components/auto-complete-search/auto-complete-search.component";
 import {DateDirective} from "./shared/directives/date.directive";
 const routes: Routes = [
   {
@@ -25,5 +24,4 @@ export class StoreRoutingModule {
 export const userManagementRoutedComponents = [
   StoreComponent,
   DateDirective,
-  AutoCompleteSearchComponent,
 ];
