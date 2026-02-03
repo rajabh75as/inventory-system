@@ -6,12 +6,10 @@ import {ConfirmPopupService} from "@mehr/mehr-confirm-popup";
 import {Subject, takeUntil} from "rxjs";
 import {AlertService} from "@mehr/mehr-core";
 import {IHydraulicFittingsSearch} from "../../models/hydraulic-fittings.model";
-import {
-  IncreaseStockModalComponent
-} from "../../../shared/components/increase-stock-modal/increase-stock-modal.component";
+import {IncreaseStockModalComponent} from "../../../shared/components/increase-stock-modal/increase-stock-modal.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {SellModalComponent} from "../../../shared/components/sell-modal/sell-modal.component";
-
+import {Utilities} from "../../../shared/utilities/utilities";
 @Component({
   selector: 'app-grid-hydraulic-fittings',
   templateUrl: './grid-hydraulic-fittings.component.html',
@@ -132,7 +130,7 @@ export class GridHydraulicFittingsComponent implements OnInit, OnDestroy {
       {headerName: 'توضیحات', field: 'description', width: 180,cellStyle: this.changeRowColor,},
 
       {headerName: 'موجودی', field: 'count', width: 100,cellStyle: this.changeRowColor,},
-      {headerName: 'قیمت ورود', field: 'enterPrice', width: 120,cellStyle: this.changeRowColor,},
+      {headerName: 'قیمت ورود', field: 'enterPrice', width: 120,cellStyle: this.changeRowColor,valueFormatter: (p:any) => Utilities.convertSeparatorNumber(p, 'enterPrice'),},
 
       {headerName: 'قفسه', field: 'shelf', width: 80,cellStyle: this.changeRowColor,},
       {headerName: 'ردیف', field: 'row', width: 80,cellStyle: this.changeRowColor,},

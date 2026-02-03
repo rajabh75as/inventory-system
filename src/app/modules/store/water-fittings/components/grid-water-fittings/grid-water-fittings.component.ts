@@ -11,6 +11,7 @@ import {
 } from "../../../shared/components/increase-stock-modal/increase-stock-modal.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {SellModalComponent} from "../../../shared/components/sell-modal/sell-modal.component";
+import {Utilities} from "../../../shared/utilities/utilities";
 
 @Component({
   selector: 'app-grid-water-fittings',
@@ -120,12 +121,12 @@ export class GridWaterFittingsComponent implements OnInit, OnDestroy {
       },
       {headerName: 'ردیف', width: 60, valueGetter: 'node.rowIndex + 1'},
       {headerName: 'کد قطعه', field: 'code', width: 120, cellStyle: this.changeRowColor,},
-      {headerName: 'نوع اتصال', field: 'type', width: 120, cellStyle: this.changeRowColor,},          // زانو، سه راه، ...
+      {headerName: 'نوع اتصال', field: 'type', width: 120, cellStyle: this.changeRowColor,},
       {headerName: 'سایز (اینچ)', field: 'sizeInch', width: 120, cellStyle: this.changeRowColor,},
       {headerName: 'جنس', field: 'material', width: 140, cellStyle: this.changeRowColor,},
       {headerName: 'توضیحات', field: 'description', width: 180, cellStyle: this.changeRowColor,},
       {headerName: 'موجودی', field: 'count', width: 100, cellStyle: this.changeRowColor,},
-      {headerName: 'قیمت ورود', field: 'enterPrice', width: 120, cellStyle: this.changeRowColor,},
+      {headerName: 'قیمت ورود', field: 'enterPrice', width: 120, cellStyle: this.changeRowColor,valueFormatter: (p:any) => Utilities.convertSeparatorNumber(p, 'enterPrice')},
       {headerName: 'قفسه', field: 'shelf', width: 80, cellStyle: this.changeRowColor,},
       {headerName: 'ردیف', field: 'row', width: 80, cellStyle: this.changeRowColor,},
       {headerName: 'ستون', field: 'column', width: 80, cellStyle: this.changeRowColor,},

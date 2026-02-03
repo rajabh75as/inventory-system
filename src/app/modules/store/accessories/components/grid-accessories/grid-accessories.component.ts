@@ -10,6 +10,7 @@ import {IAccessoriesSearch} from "../../models/accessories.model";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {IncreaseStockModalComponent} from "../../../shared/components/increase-stock-modal/increase-stock-modal.component";
 import {SellModalComponent} from "../../../shared/components/sell-modal/sell-modal.component";
+import {Utilities} from "../../../shared/utilities/utilities";
 
 
 @Component({
@@ -25,7 +26,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
   private paramRequest: any;
   filterData: DocumentFilter = {};
   filter:IAccessoriesSearch;
-  sortOption:any = null;
   private _destroy = new Subject<void>();
   constructor(private accessoriesService: AccessoriesService,
               private alertService: AlertService,
@@ -103,7 +103,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         cellRenderer: 'detailButton',
         cellStyle: this.changeRowColor,
         minWidth: 85,
-        sortable: true,
         cellRendererParams: {
           onClick: this.onOperationButton.bind(this),
           buttons: [
@@ -147,7 +146,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'code',
         cellStyle: this.changeRowColor,
-        sortable: true,
       },
       {
         headerName: 'نام قطعه',
@@ -155,7 +153,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'name',
         cellStyle: this.changeRowColor,
-        sortable: true,
       },
       {
         headerName: 'مناسب برای',
@@ -163,7 +160,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'compatibleHoseSize',
         cellStyle: this.changeRowColor,
-        sortable: true,
       },
       {
         headerName: 'توضیحات',
@@ -171,7 +167,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'description',
         cellStyle: this.changeRowColor,
-        sortable: true,
       },
       {
         headerName: 'موجودی',
@@ -179,31 +174,6 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'count',
         cellStyle: this.changeRowColor,
-        sortable: true,
-      },
-      {
-        headerName: 'قفسه',
-        field: 'shelf',
-        width: 120,
-        filter: 'shelf',
-        cellStyle: this.changeRowColor,
-        sortable: true,
-      },
-      {
-        headerName: 'ردیف',
-        field: 'row',
-        width: 70,
-        filter: 'row',
-        cellStyle: this.changeRowColor,
-        sortable: true,
-      },
-      {
-        headerName: 'ستون',
-        field: 'column',
-        width: 120,
-        filter: 'column',
-        cellStyle: this.changeRowColor,
-        sortable: true,
       },
       {
         headerName: 'قیمت ورود',
@@ -211,7 +181,28 @@ export class GridAccessoriesComponent implements OnInit ,OnDestroy{
         width: 120,
         filter: 'enterPrice',
         cellStyle: this.changeRowColor,
-        sortable: true,
+        valueFormatter: (p:any) => Utilities.convertSeparatorNumber(p, 'enterPrice'),
+      },
+      {
+        headerName: 'قفسه',
+        field: 'shelf',
+        width: 120,
+        filter: 'shelf',
+        cellStyle: this.changeRowColor,
+      },
+      {
+        headerName: 'ردیف',
+        field: 'row',
+        width: 70,
+        filter: 'row',
+        cellStyle: this.changeRowColor,
+      },
+      {
+        headerName: 'ستون',
+        field: 'column',
+        width: 120,
+        filter: 'column',
+        cellStyle: this.changeRowColor,
       },
     ];
     this.frameworkComponents = {detailButton: GridButtonsComponent};

@@ -4,7 +4,6 @@ import {ListAccessoriesComponent} from "./page/list-accessories.component";
 import {BaseAccessoriesComponent} from "./components/base-accessories/base-accessories.component";
 import {AccessoriesComponent} from "./accessories.component";
 import {GridAccessoriesComponent} from "./components/grid-accessories/grid-accessories.component";
-import {DisplayAccessoriesComponent} from "./components/display-accessories/display-accessories.component";
 import {SearchAccessoriesComponent} from "./components/search-accessories/search-accessories.component";
 
 
@@ -30,10 +29,6 @@ const routes: Routes = [
         path: 'edit/:id',
         component: BaseAccessoriesComponent
       },
-      {
-        path: 'display/:id',
-        component: DisplayAccessoriesComponent
-      },
     ]
   }
 ];
@@ -47,7 +42,6 @@ export class AccessoriesRoutingModule {
 
 export const AppRoutedComponents = [
   SearchAccessoriesComponent,
-  DisplayAccessoriesComponent,
   AccessoriesComponent,
   BaseAccessoriesComponent,
   ListAccessoriesComponent,

@@ -9,6 +9,7 @@ import { IGasAccessorySearch } from "../../models/gas-accessories.model";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { IncreaseStockModalComponent } from "../../../shared/components/increase-stock-modal/increase-stock-modal.component";
 import {SellModalComponent} from "../../../shared/components/sell-modal/sell-modal.component";
+import {Utilities} from "../../../shared/utilities/utilities";
 
 @Component({
   selector: 'app-grid-gas-accessories',
@@ -110,7 +111,7 @@ export class GridGasAccessoriesComponent implements OnInit, OnDestroy {
       { headerName: 'جنس', field: 'material', width: 120 },
       { headerName: 'توضیحات', field: 'description', width: 180 },
       { headerName: 'موجودی', field: 'count', width: 100 },
-      { headerName: 'قیمت ورود', field: 'enterPrice', width: 120 },
+      { headerName: 'قیمت ورود', field: 'enterPrice', width: 120 ,valueFormatter: (p:any) => Utilities.convertSeparatorNumber(p, 'enterPrice')},
       { headerName: 'قفسه', field: 'shelf', width: 80 },
       { headerName: 'ردیف', field: 'row', width: 80 },
       { headerName: 'ستون', field: 'column', width: 80 },

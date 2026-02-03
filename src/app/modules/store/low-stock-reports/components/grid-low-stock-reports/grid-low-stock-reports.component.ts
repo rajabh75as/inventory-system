@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MehrGridComponent } from '@mehr/mehr-grid';
 import {LowStockReportsService} from "../../services/low-stock-reports.service";
+import {Utilities} from "../../../shared/utilities/utilities";
 
 @Component({
   selector: 'app-grid-low-stock-reports',
@@ -53,7 +54,6 @@ export class GridLowStockReportsComponent implements OnInit {
       {
         headerName: 'دسته‌بندی',
         width: 150,
-        sortable: true,
         cellStyle: this.changeRowColor,
         valueGetter: (params: any) => {
           const category = params?.data?.category;
@@ -64,15 +64,13 @@ export class GridLowStockReportsComponent implements OnInit {
         headerName: 'نام کالا',
         field: 'itemName',
         width: 250,
-        sortable: true,
         cellStyle: this.changeRowColor
       },
       {
         headerName: 'موجودی',
         field: 'stock',
         width: 120,
-        sortable: true,
-        cellStyle: this.changeRowColor
+        cellStyle: this.changeRowColor,
       },
       {
         headerName: 'واحد',
